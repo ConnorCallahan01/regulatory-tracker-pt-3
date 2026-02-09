@@ -1,0 +1,29 @@
+# Regulatory Tracker - User Journey and Decision Points
+
+**Source**: repository/business-case/Regulatory Tracker - User Journey and Decision Points.md
+**Type**: Business Case
+**Upload Date**: 2026-02-09
+**Source SHA**: Not provided
+
+## Key Points
+
+- The Regulatory Tracker is an AI-powered application that continuously monitors regulatory changes using Claude AI as a mock agentic backend to automate detection, analysis, and workflow management.
+- User journey spans 7 phases: initial dashboard access, scan configuration, backend agent orchestration (7 stages), results review, workflow management with status transitions, knowledge store search/filtering, and documentation export.
+- Backend orchestration includes ChangeDetectionService (detects keywords and material changes), LLMService (Claude API integration for relevance/impact analysis), and ArtifactGenerator (creates markdown and Word documents).
+- System implements intelligent filtering with confidence scoring (0.0-1.0) and flags items requiring human review if confidence is below 0.7 or explicitly marked by Claude.
+- Workflow management allows compliance teams to transition items through Draft → In Review → Verified states, with verified items stored in a searchable knowledge store with export capabilities.
+
+## Entities and Topics
+
+- **ScanOrchestrator**: Backend component coordinating multi-stage scan pipeline with state management and error handling
+- **Claude API (claude-sonnet-4)**: AI service analyzing regulatory content for relevance, impact assessment, and compliance recommendations
+- **ChangeDetectionService**: System component detecting material changes through content hashing and regulatory keyword matching
+- **ArtifactGenerator**: Module creating professional markdown and Word document outputs for compliance records
+- **Mock Regulatory Sources**: FinCEN CDD Amendment, FinCEN SAR Advisory, OCC Transaction Monitoring Guidance, Federal Reserve AML Procedures
+- **Workflow States**: Draft, In Review, Verified (with bidirectional transitions for compliance review)
+- **Impact Levels**: Low, Medium, High, Critical (color-coded visual indicators)
+- **Knowledge Store**: Searchable archive of verified regulatory items with filtering by impact level, date range, domain, and jurisdiction
+
+## Relevance to Project
+
+This document provides critical business case documentation for the Regulatory Tracker system, detailing the complete user journey and system architecture needed to implement an AI-driven compliance monitoring solution. It serves as a functional specification that aligns user workflows with backend agent orchestration, establishing decision points and data flows essential for project development and stakeholder alignment.

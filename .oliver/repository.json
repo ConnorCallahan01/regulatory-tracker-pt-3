@@ -2,7 +2,7 @@
   "version": "1.0",
   "projectId": "d77233ea-0e10-439c-80da-c400c649b9f5",
   "createdAt": "2026-02-09T16:58:44.910Z",
-  "updatedAt": "2026-02-09T16:59:04.033Z",
+  "updatedAt": "2026-02-09T16:59:13.324Z",
   "files": [
     {
       "id": "748a5cd0-b2f5-495c-9d44-9d15bb47fda8",
@@ -15,8 +15,20 @@
       "createdAt": "2026-02-09T16:59:03.641Z",
       "updatedAt": "2026-02-09T16:59:03.641Z",
       "tags": []
+    },
+    {
+      "id": "769106e0-eedb-4c38-a79f-f3f8d4f054c5",
+      "name": "Regulatory Tracker - User Journey and Decision Points.md",
+      "path": "repository/business-case/Regulatory Tracker - User Journey and Decision Points.md",
+      "folder": "business-case",
+      "mimeType": "application/octet-stream",
+      "size": 8684,
+      "sha": "eb05cebfc0c01f3033ce8d2ded6943827e462bc4",
+      "createdAt": "2026-02-09T16:59:12.928Z",
+      "updatedAt": "2026-02-09T16:59:12.928Z",
+      "tags": []
     }
   ],
   "externalLinks": [],
-  "storageUsed": 22104
+  "storageUsed": 30788
 }

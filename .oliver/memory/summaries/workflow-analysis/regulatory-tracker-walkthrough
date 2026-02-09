@@ -1,0 +1,31 @@
+# Regulatory Tracker - Complete User Journey Walkthrough
+
+**Source**: repository/workflow-analysis/regulatory-tracker-walkthrough (1).md
+**Type**: Design Document
+**Upload Date**: 2026-02-09
+**Source SHA**: Not provided
+
+## Key Points
+
+- The Regulatory Tracker is an AI-powered compliance platform combining Next.js frontend, FastAPI backend, Claude API integration, and SQLite database to automate monitoring and analysis of regulatory changes
+- Users initiate scans by configuring domain, jurisdiction, and sub-domains; the backend orchestrates a 7-stage pipeline (initializing, retrieving sources, detecting changes, analyzing, scoring, generating artifacts, and finalizing) that runs asynchronously in the background
+- The ScanOrchestrator coordinates intelligent regulatory analysis using Claude AI, which evaluates changes for relevance, impact level (Low/Medium/High/Critical), affected compliance areas, and confidence scoring with human review flagging for uncertain or high-impact items
+- Compliance teams manage regulatory findings through a formal workflow system (Draft → In Review → Verified) that ensures governance, audit trails, and institutional knowledge building
+- The system automatically generates professional Word documents and markdown artifacts for each verified regulatory change, eliminating manual report creation and enabling easy knowledge store searching and export
+
+## Entities and Topics
+
+- **ScanOrchestrator**: Central coordinator managing the 7-stage pipeline for regulatory analysis with state transitions, error handling, and real-time status updates
+- **ChangeDetectionService**: Identifies material regulatory changes using SHA-256 content hashing and keyword detection (regex-based) to filter non-material updates
+- **LLMService**: Integrates with Claude API (model: claude-sonnet-4-20250514) to construct analysis prompts and parse structured JSON responses for regulatory assessment
+- **ArtifactGenerator**: Creates professional Markdown and Word document outputs with consistent formatting, metadata, and customizable templates
+- **Next.js 14 Frontend**: TypeScript application with Tailwind CSS providing dashboard, scan configuration, results review, workflow management, and knowledge store interfaces
+- **FastAPI Backend**: Python application managing API endpoints, database operations, and background task orchestration
+- **SQLite Database**: Stores scan records, analysis results, workflow status, and metadata for audit trails
+- **Mock Regulatory Sources**: Four JSON-based demo documents (FinCEN CDD Amendment, FinCEN SAR Advisory, OCC Transaction Monitoring Guidance, Federal Reserve AML Procedures)
+- **Claude AI Analysis**: Evaluates regulatory relevance, assigns impact levels, identifies affected compliance areas, provides recommended actions, and generates confidence scores
+- **Workflow System**: Three-stage governance process (Draft, In Review, Verified) for compliance team review with status transitions and audit logging
+
+## Relevance to Project
+
+This document is a comprehensive technical and functional specification for the Regulatory Tracker application, detailing the complete user journey and backend agentic architecture. It serves as the primary design reference for understanding how the AI-powered compliance monitoring system operates, from initial user interactions through regulatory analysis and knowledge management, making it essential for development, testing, and stakeholder communication regarding the platform's capabilities and workflow processes.

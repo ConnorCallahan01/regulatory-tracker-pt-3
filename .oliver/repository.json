@@ -2,8 +2,21 @@
   "version": "1.0",
   "projectId": "d77233ea-0e10-439c-80da-c400c649b9f5",
   "createdAt": "2026-02-09T16:58:44.910Z",
-  "updatedAt": "2026-02-09T16:58:44.910Z",
-  "files": [],
+  "updatedAt": "2026-02-09T16:59:04.033Z",
+  "files": [
+    {
+      "id": "748a5cd0-b2f5-495c-9d44-9d15bb47fda8",
+      "name": "regulatory-tracker-walkthrough (1).md",
+      "path": "repository/workflow-analysis/regulatory-tracker-walkthrough (1).md",
+      "folder": "workflow-analysis",
+      "mimeType": "application/octet-stream",
+      "size": 22104,
+      "sha": "a89fba3fb351f86bef5f424eecbbe2175a1d90ec",
+      "createdAt": "2026-02-09T16:59:03.641Z",
+      "updatedAt": "2026-02-09T16:59:03.641Z",
+      "tags": []
+    }
+  ],
   "externalLinks": [],
-  "storageUsed": 0
+  "storageUsed": 22104
 }
